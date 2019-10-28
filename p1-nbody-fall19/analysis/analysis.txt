@@ -1,0 +1,49 @@
+This is analysis.txt
+Vanessa Chen
+vc86
+
+Copy/paste the output of your simulation when using planets.txt,
+running the simulation for 1,000,000 (one  million) seconds, and
+with a time-step/dt value of 25,000
+
+5
+2.50e+11
+ 1.4657e+11  2.9604e+10 -5.8931e+03  2.9226e+04  5.9740e+24    earth.gif
+ 2.2659e+11  2.4055e+10 -2.5502e+03  2.3968e+04  6.4190e+23     mars.gif
+ 3.8636e+10  4.2569e+10 -3.5575e+04  3.2587e+04  3.3020e+23  mercury.gif
+ 2.6827e+04  2.9792e+03  5.1739e-02  8.6585e-03  1.9890e+30      sun.gif
+ 1.0244e+11  3.4391e+10 -1.1156e+04  3.3224e+04  4.8690e+24    venus.gif
+
+
+Copy/paste the output of your simulation when using planets.txt,
+running the simulation for 2,000,000 (two  million) seconds, and
+with a time-step/dt value of 25,000
+
+5
+2.50e+11
+ 1.3774e+11  5.8036e+10 -1.1560e+04  2.7494e+04  5.9740e+24    earth.gif
+ 2.2275e+11  4.7841e+10 -5.0730e+03  2.3568e+04  6.4190e+23     mars.gif
+-5.9865e+09  5.7090e+10 -4.8116e+04 -4.4176e+03  3.3020e+23  mercury.gif
+ 1.0223e+05  2.3000e+04  9.6223e-02  3.2991e-02  1.9890e+30      sun.gif
+ 8.5997e+10  6.5196e+10 -2.1191e+04  2.7971e+04  4.8690e+24    venus.gif
+
+Run the simulation for a billion seconds (10^9) and a time-step/dt
+of a million. You should see behavior inconsistent with what is
+expected for celestial bodies. This is due to large values of dt
+when approximating forces. Write down below what you see during
+this simulation.
+
+The celestial bodies did not seem to follow a behavior consistent with the prior simulations or what was shown in prior simulations.
+They seemed to cross paths, and mercury, in particular, seemed to be orbiting on a very unorderly elliptical path that coincides with
+the rest of the bodies.
+
+Run the simulation with the original time and dt values which are
+
+double totalTime = 39447000.0;
+double dt = 25000.0;
+
+But use the input data file "data/kaleidoscope.txt".
+In fewer than 50 words describe the visualization you observe.
+
+It involved 8 Earths, Mercuries, and Jupiters where half the Jupiters moved in opposite directions to the others in a constant circular pattern
+around the Sun, while the Mercuries and Earths oscillated closer and farther from the Sun as they orbit in opposite directions.
